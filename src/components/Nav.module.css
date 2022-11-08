@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.nav img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.nav h1 {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 500;
+
+}

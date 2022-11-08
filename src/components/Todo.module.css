@@ -1,0 +1,16 @@
+.todo {
+    border-radius: 5px;
+    
+}
+.todo ul {
+    max-height: 320px;
+    overflow-y: scroll;
+    min-height: 50px;
+    border-bottom: 1px solid;
+    scrollbar-color: red;
+    border-radius: 5px 5px 0 0;
+    
+}
+.todo ul::-webkit-scrollbar { 
+    display: none;  
+}
