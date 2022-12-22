@@ -5,12 +5,19 @@ import todosContext from '../context/todosContext'
 import check from "../assets/images/icon-check.svg"
 function Item(props) {
   let [theme]=useContext(themeContext)
-  let [todos,dispatchTodos]=useContext(todosContext)
+  let [todos,setTodos]=useContext(todosContext)
   let [isActive,setIsActive]=useState(props.isActive)
   let toggleRadioButton = (e)=>{
     setIsActive(prev=>{
-      dispatchTodos({type:"IS_ACTIVE",payload:{id:props.id,isActive:!prev}})
       return !prev
+    })
+    setTodos(prev=>{
+      return prev.map(item=>{
+        if (item.id===props.id) {
+          return {...item,isActive:!item.isActive}
+        }
+        return item
+      })
     })
     
   }
@@ -23,7 +30,7 @@ function Item(props) {
           </div>
           <p style={{color:theme==="light"?"hsl(235, 19%, 35%)":"hsl(236, 33%, 92%)"}}>{props.title}</p>  
         </div>
-        <button style={{color:theme==="light"?"hsl(233, 14%, 35%)":"hsl(233, 11%, 84%)"}} onClick={()=>{dispatchTodos({type:"DELETE",payload:{id:props.id}})}}>X</button>
+        <button style={{color:theme==="light"?"hsl(233, 14%, 35%)":"hsl(233, 11%, 84%)"}} onClick={()=>{setTodos(prev=>prev.filter(item=>item.id!==props.id))}}>X</button>
     </li>
   )
 }

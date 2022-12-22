@@ -6,13 +6,15 @@ import todosContext from '../context/todosContext'
 function Input() {
   let [inputState,setInputState]=useState("")
   let [theme]=useContext(themeContext)
-  let [todos,dispatchTodos]=useContext(todosContext)
+  let [todos,setTodos]=useContext(todosContext)
   let handleChange = (e)=>{ 
     setInputState(e.target.value)
   }
   window.onkeypress = (e)=>{
     if(e.key==="Enter" && inputState!==""){
-      dispatchTodos({type:"ADD",payload:inputState})
+      setTodos(prev=>{
+        return [...prev,{title:inputState,isActive:true,id:Math.random()}]
+      })
       setInputState("")
     }
   }

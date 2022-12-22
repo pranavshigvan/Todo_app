@@ -1,4 +1,4 @@
-import React,{useReducer} from 'react'
+import React,{useState} from 'react'
 
 const todosContext = React.createContext([])
 
@@ -24,9 +24,9 @@ let todoReducer = (state,action)=>{
     }
 }
 export let TodosProvider = (props)=>{
-    let [todos,dispatchTodos]=useReducer(todoReducer,JSON.parse(localStorage.getItem("todos")))
+    let [todos,setTodos]=useState(JSON.parse(localStorage.getItem("todos"))||[])
     return(
-        <todosContext.Provider value={[todos,dispatchTodos]}>
+        <todosContext.Provider value={[todos,setTodos]}>
             {props.children}
         </todosContext.Provider>
     )

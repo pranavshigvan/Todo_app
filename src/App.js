@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useContext ,useState} from 'react';
 import themeContext from './context/themeContext';
@@ -12,7 +11,7 @@ import Input from './components/Input';
 import Todo from './components/Todo';
 
 function App() {
-  let [theme,setTheme]=useContext(themeContext)
+  let [theme]=useContext(themeContext)
   let [innerWidth,setInnerWidth]=useState(window.innerWidth)
   window.onresize=()=>setInnerWidth(window.innerWidth)
   let style ={

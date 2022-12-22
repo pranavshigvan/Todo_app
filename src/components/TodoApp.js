@@ -1,7 +1,8 @@
 import React from 'react'
 let style = {
     maxWidth:"450px",
-    margin:"10px auto"
+    width:"100%",
+    border:"1px solid red"
 }
 function TodoApp(props) {
    return (

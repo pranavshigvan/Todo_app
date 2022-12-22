@@ -7,7 +7,7 @@ import todosContext from '../context/todosContext'
 
 function Todo() {
   let [theme]=useContext(themeContext)
-  let [todos,dispatchTodos]=useContext(todosContext)
+  let [todos]=useContext(todosContext)
   let [filter,setFilter]=useState("all")
   localStorage.setItem("todos",JSON.stringify(todos))  
   return (
