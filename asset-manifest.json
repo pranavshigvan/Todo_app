@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2a8c9435.css",
-    "main.js": "/react-gh-pages/static/js/main.d9fbebee.js",
-    "static/media/bg-desktop-light.jpg": "/react-gh-pages/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
-    "static/media/bg-desktop-dark.jpg": "/react-gh-pages/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
-    "index.html": "/react-gh-pages/index.html",
-    "static/media/icon-sun.svg": "/react-gh-pages/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
-    "static/media/icon-moon.svg": "/react-gh-pages/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
-    "static/media/icon-check.svg": "/react-gh-pages/static/media/icon-check.a8fb15d0278c8e312df5fc8364fef863.svg",
-    "main.2a8c9435.css.map": "/react-gh-pages/static/css/main.2a8c9435.css.map",
-    "main.d9fbebee.js.map": "/react-gh-pages/static/js/main.d9fbebee.js.map"
+    "main.css": "/Todo_app/static/css/main.2a8c9435.css",
+    "main.js": "/Todo_app/static/js/main.4db7b299.js",
+    "static/media/bg-desktop-light.jpg": "/Todo_app/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/Todo_app/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "index.html": "/Todo_app/index.html",
+    "static/media/icon-sun.svg": "/Todo_app/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-moon.svg": "/Todo_app/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-check.svg": "/Todo_app/static/media/icon-check.a8fb15d0278c8e312df5fc8364fef863.svg",
+    "main.2a8c9435.css.map": "/Todo_app/static/css/main.2a8c9435.css.map",
+    "main.4db7b299.js.map": "/Todo_app/static/js/main.4db7b299.js.map"
   },
   "entrypoints": [
     "static/css/main.2a8c9435.css",
-    "static/js/main.d9fbebee.js"
+    "static/js/main.4db7b299.js"
   ]
 }
