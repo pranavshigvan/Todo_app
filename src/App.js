@@ -18,7 +18,9 @@ function App() {
     backgroundColor:theme==="light"?"hsl(0, 0%, 98%)":"hsl(235, 21%, 11%)",
     backgroundImage:theme==="light"?innerWidth>750?`url(${lightBgImgDesktop})`:`url(${lightBgImgMobile})`:innerWidth>750?`url(${darkBgImgDesktop})`:`url(${darkBgImgMobile})`,
   }
+  
   return (
+    
       <div className="App" style={style}>
         <TodoApp>
           <Nav />

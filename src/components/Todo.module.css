@@ -7,7 +7,6 @@
     overflow-y: scroll;
     min-height: 50px;
     border-bottom: 1px solid;
-    scrollbar-color: red;
     border-radius: 5px 5px 0 0;
     
 }
